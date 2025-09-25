@@ -3,6 +3,12 @@
     --standard-height: auto;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -19,6 +25,7 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: var(--standard-height);
     border: var(--main-border);
@@ -37,12 +44,14 @@ main {
 
 aside {
     width: 300px;
-    margin: auto;
-    border: var(--main-border);
-    padding: 10px;
-    background-color: white;
-    color: blue;
+    text-align: center;
+    position: relative
+}
 
+h2 {
+    position: absolute;
+    top: 10px;
+    left: 90px;
 }
 
 aside img {
@@ -55,4 +64,13 @@ footer {
     border-top: var(--main-border);
     text-align: center;
 
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: var(--main-border);
+    padding: 1rem;
+    background-color: white;
+    color: blue;
 }
